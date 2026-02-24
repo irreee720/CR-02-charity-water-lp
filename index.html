@@ -1,47 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Water Journey | charity: water</title>
+  <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
+  <!-- Top nav -->
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">
+        <span class="drop" aria-hidden="true"></span>
+        <span class="brand-text">charity: water</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#concept">Concept</a>
+        <a href="#rewards">Rewards</a>
+        <a href="#mechanics">Mechanics</a>
+        <a href="#plan">Timeline</a>
+        <a class="nav-cta" href="#cta">Play</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top">
     <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Mobile Game Concept</p>
+          <h1>Water Journey</h1>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+          <p class="hero-stat">
+            <span class="stat-big">784 million</span>
+            <span class="stat-small">people lack access to clean water.</span>
+          </p>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+          <p class="hero-sub">
+            A path-finding puzzle that turns awareness into action one level at a time.
+            Built to engage college students without feeling preachy.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#cta">Play the Demo</a>
+            <a class="btn ghost" href="#concept">See how it works</a>
+          </div>
+
+          <div class="trust">
+            <div class="pill">Proof of impact</div>
+            <div class="pill">Student-sized giving</div>
+            <div class="pill">Campus rewards</div>
+          </div>
         </div>
+
+        <!-- Mock phone UI (no image needed) -->
+        <div class="hero-media">
+          <div class="phone">
+            <div class="phone-top">
+              <div class="mini">
+                <span class="trophy" aria-hidden="true"></span>
+                <span>850 pts</span>
+              </div>
+              <div class="mini">
+                <span class="people" aria-hidden="true"></span>
+                <span>42 helped</span>
+              </div>
+              <div class="mini">
+                <span class="heart" aria-hidden="true"></span>
+                <span>3 lives</span>
+              </div>
+            </div>
+
+            <div class="phone-title">
+              <p class="muted">Level 3: Ethiopia</p>
+              <p class="bold">Connect the Water Path</p>
+            </div>
+
+            <div class="grid">
+              <div class="tile source">💧</div>
+              <div class="tile"></div>
+              <div class="tile"></div>
+              <div class="tile"></div>
+              <div class="tile"></div>
+
+              <div class="tile"></div>
+              <div class="tile pipe">—</div>
+              <div class="tile"></div>
+              <div class="tile"></div>
+              <div class="tile"></div>
+
+              <div class="tile"></div>
+              <div class="tile pipe">—</div>
+              <div class="tile pipe">—</div>
+              <div class="tile"></div>
+              <div class="tile"></div>
+
+              <div class="tile"></div>
+              <div class="tile pipe">—</div>
+              <div class="tile pipe">—</div>
+              <div class="tile"></div>
+              <div class="tile"></div>
+
+              <div class="tile"></div>
+              <div class="tile"></div>
+              <div class="tile village">🏡</div>
+              <div class="tile"></div>
+              <div class="tile"></div>
+            </div>
+
+            <div class="phone-footer">
+              <button class="chip" type="button">Rotate Pipes</button>
+              <button class="chip" type="button">Plan Route</button>
+            </div>
+          </div>
+
+          <div class="float-card">
+            <p class="float-title">Campus-ready engagement</p>
+            <p class="float-body">Students play between classes, earn points, and learn real facts.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
+    <!-- Concept -->
+    <section id="concept" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Mission-Aligned Gameplay</h2>
+          <p class="lead">
+            Water Journey is a path-finding puzzle where players guide clean water through communities.
+            Each level represents a real region where charity: water operates.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature">
+            <div class="icon i-blue">💧</div>
+            <h3>Connect pipes</h3>
+            <p>Tap pieces to rotate and build a water route from source to village.</p>
+          </article>
+
+          <article class="feature">
+            <div class="icon i-cyan">🧠</div>
+            <h3>Think strategically</h3>
+            <p>Limited moves per level. Better planning = better score.</p>
+          </article>
+
+          <article class="feature">
+            <div class="icon i-yellow">🏆</div>
+            <h3>Earn campus perks</h3>
+            <p>Points convert into small rewards students actually care about.</p>
+          </article>
+        </div>
+      </div>
     </section>
+
+    <!-- Rewards -->
+    <section id="rewards" class="section alt">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h2>Campus Rewards System</h2>
+            <p class="lead">
+              Gamified incentives that feel natural on campus  not random coupons nobody uses.
+            </p>
+          </div>
+          <div class="note">
+            <p class="note-title">Why this works</p>
+            <p class="note-body">Rewards build “one more level” engagement and encourage sharing.</p>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card highlight">
+            <p class="kicker">Starter</p>
+            <h3>100 points</h3>
+            <p class="muted">$2 cafeteria credit</p>
+          </div>
+
+          <div class="card">
+            <p class="kicker">Student win</p>
+            <h3>250 points</h3>
+            <p class="muted">bookstore discount</p>
+          </div>
+
+          <div class="card">
+            <p class="kicker">Social</p>
+            <h3>500 points</h3>
+            <p class="muted">event tickets</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>   <!-- Rewards ends -->
+
+<section id="brand" class="section">
+  ...
+</section>
+
+<section id="mechanics" class="section">
+
+    <!-- Mechanics + scoring -->
+    <section id="mechanics" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Game Logic & Mechanics</h2>
+          <p class="lead">Simple controls. Clear feedback. Addictive progress.</p>
+        </div>
+
+        <div class="two-col">
+          <div class="panel">
+            <h3>Player actions</h3>
+            <ol class="steps">
+              <li><span class="step-num">1</span> Tap/click pipes to rotate 90°</li>
+              <li><span class="step-num">2</span> Plan your route (limited moves)</li>
+              <li><span class="step-num">3</span> Complete connection (water flow animation)</li>
+            </ol>
+          </div>
+
+          <div class="panel">
+            <h3>Scoring & updates</h3>
+            <div class="score-list">
+              <div class="score good">
+                <p class="score-title">Complete level</p>
+                <p class="score-meta">+100 points · +10–20 people helped</p>
+              </div>
+              <div class="score blue">
+                <p class="score-title">Perfect score</p>
+                <p class="score-meta">+50 bonus points · +5 bonus people</p>
+              </div>
+              <div class="score warn">
+                <p class="score-title">Daily challenge</p>
+                <p class="score-meta">+200 points · special levels</p>
+              </div>
+              <div class="score bad">
+                <p class="score-title">Failed level</p>
+                <p class="score-meta">-1 life · retry option</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="metrics">
+          <div class="metric">
+            <p class="metric-num">40%</p>
+            <p class="metric-label">student install rate</p>
+          </div>
+          <div class="metric">
+            <p class="metric-num">3+</p>
+            <p class="metric-label">sessions per week</p>
+          </div>
+          <div class="metric">
+            <p class="metric-num">15 min</p>
+            <p class="metric-label">avg session time</p>
+          </div>
+          <div class="metric">
+            <p class="metric-num">5%</p>
+            <p class="metric-label">donation conversion</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section id="plan" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Proposed Implementation Timeline</h2>
+          <p class="lead">Prototype fast, pilot on campus, then scale.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <p class="tl-phase">Phase 1</p>
+              <h3>Prototype Development</h3>
+              <p class="muted">4 weeks · Build core gameplay + 3 test levels.</p>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <p class="tl-phase">Phase 2</p>
+              <h3>Campus Pilot</h3>
+              <p class="muted">8 weeks · Launch at 2 partner universities.</p>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <p class="tl-phase">Phase 3</p>
+              <h3>Iteration & Expansion</h3>
+              <p class="muted">12 weeks · Add levels + social features + leaderboard.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="cta" class="cta">
+      <div class="container cta-inner">
+        <h2>Turn scrolling into impact.</h2>
+        <p class="lead">
+          A clean, branded concept built for students — with rewards, learning, and proof.
+        </p>
+
+        <div class="cta-actions">
+          <a class="btn primary" href="#">Launch Demo</a>
+          <a class="btn ghost" href="#">Bring to Our Campus</a>
+        </div>
+
+        <p class="fine">
+          Tip: Replace the # links with your real demo or donation link when allowed.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p><strong>Water Journey</strong> · student landing page concept</p>
+        <p class="muted">Built with HTML + CSS</p>
+      </div>
+    </footer>
+  </main>
 </body>
 </html>
